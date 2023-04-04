@@ -12,3 +12,16 @@
    
 如果需要**快速实现实时检测**，可以选择 **YOLO 或 SSD**等单阶段算法；   
 如果需要**更高的检测精度**，可以选择 **Faster R-CNN** 等两阶段算法。
+
+几个比较常见的术语：
+
+卷积层：<img width="733" alt="1680604187663" src="https://user-images.githubusercontent.com/105412420/229765143-5cacc29b-dcd4-4536-ae51-2b2b04c57368.png">
+
+激活层：<img width="749" alt="1680604275207" src="https://user-images.githubusercontent.com/105412420/229765279-99db2bb7-2b0f-4af1-8119-4437ef8bf1d6.png">
+
+池化层：<img width="761" alt="1680604325916" src="https://user-images.githubusercontent.com/105412420/229765444-16f777fa-c56f-46ec-8f7f-bd663cfc50e5.png">
+
+
+
+
+
