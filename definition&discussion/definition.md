@@ -21,6 +21,9 @@
 
 池化层：<img width="761" alt="1680604325916" src="https://user-images.githubusercontent.com/105412420/229765444-16f777fa-c56f-46ec-8f7f-bd663cfc50e5.png">
 
+几个深度学习框架的简介和选择：<img width="763" alt="1680611022458" src="https://user-images.githubusercontent.com/105412420/229790639-3cca55b7-7b3f-45ef-bfc3-bd338591b70e.png">
+
+
 
 
 
