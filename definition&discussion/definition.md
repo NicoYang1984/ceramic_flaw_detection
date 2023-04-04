@@ -23,6 +23,9 @@
 
 几个深度学习框架的简介和选择：<img width="763" alt="1680611022458" src="https://user-images.githubusercontent.com/105412420/229790639-3cca55b7-7b3f-45ef-bfc3-bd338591b70e.png">
 
+交叉熵代价函数（Cross-entropy cost function）优点及其原理：<img width="517" alt="1680611737323" src="https://user-images.githubusercontent.com/105412420/229793496-8dcaf030-6609-49ae-a031-79fdd7e2ee3a.png">
+
+
 
 
 
