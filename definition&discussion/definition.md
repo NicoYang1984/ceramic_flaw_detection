@@ -21,6 +21,19 @@
 
 池化层：<img width="761" alt="1680604325916" src="https://user-images.githubusercontent.com/105412420/229765444-16f777fa-c56f-46ec-8f7f-bd663cfc50e5.png">
 
+# 全局平均池化：
+原帖链接：https://zhuanlan.zhihu.com/p/377572391
+论文地址: https://arxiv.org/pdf/1312.4400.pdf%20http://arxiv.org/abs/1312.4400
+代码链接: https://worksheets.codalab.org/worksheets/0x7b8f6fbc6b5c49c18ac7ca94aafaa1a7
+背景
+在卷积神经网络训练初期，卷积层通过池化层后一般要接多个全连接层进行降维，最后再Softmax分类，这种做法使得全连接层参数很多，降低了网络训练速度，且容易出现过拟合的情况。在这种背景下，M Lin等人提出使用全局平均池化Global Average Pooling[1]来取代最后的全连接层。用很小的计算代价实现了降维，更重要的是GAP极大减少了网络参数(CNN网络中全连接层占据了很大的参数)。
+定义
+全局平均池化是一种特殊的平均池化，只不过它不划分若干矩形区域，而是将整个特征图中所有的元素取平均输出到下一层。其定义如下：
+![image](https://user-images.githubusercontent.com/103879136/229973727-a29db19a-3d83-4f9b-af16-087e948feed1.png)
+![image](https://user-images.githubusercontent.com/103879136/229973771-e4c8a0de-d1ca-4876-a6ac-315530d3c43a.png)
+解说
+作为全连接层的替代操作，GAP对整个网络在结构上做正则化防止过拟合，直接剔除了全连接层中黑箱的特征，直接赋予了每个channel实际的类别意义。除此之外，使用GAP代替全连接层，可以实现任意图像大小的输入，而GAP对整个特征图求平均值，也可以用来提取全局上下文信息，全局信息作为指导进一步增强网络性能。
+
 几个深度学习框架的简介和选择：<img width="763" alt="1680611022458" src="https://user-images.githubusercontent.com/105412420/229790639-3cca55b7-7b3f-45ef-bfc3-bd338591b70e.png">
 
 交叉熵代价函数（Cross-entropy cost function）优点及其原理：<img width="517" alt="1680611737323" src="https://user-images.githubusercontent.com/105412420/229793496-8dcaf030-6609-49ae-a031-79fdd7e2ee3a.png">
